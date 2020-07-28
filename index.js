@@ -112,7 +112,7 @@ const freshEmployees = () => {
                                 .then(function (answers) {
                                     var intern = new Intern(answers.name, answers.ID, answers.email, answers.school)
                                     employees.push(intern);
-                                    needsEmployees();
+                                    freshEmployees();
 
                                 });
                         }
